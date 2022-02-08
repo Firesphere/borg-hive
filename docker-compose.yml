@@ -8,6 +8,8 @@ services:
       - MYSQL_RANDOM_ROOT_PASSWORD=1
     env_file:
       - .env
+    ports:
+      - "127.0.0.1:3306:3306"
 
   app:
     image: bpereto/borg-hive:0.1.3
